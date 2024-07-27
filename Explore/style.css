@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    --color-base-gray:#F9F4FB;
+    --color-base-pink:#B52184;
+    --color-base-darkblue:#312D64;
+    --color-base-white:#FFF;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+#app{
+    display: flex;
+    max-width: 43rem;
+    margin: 0 auto;
+    flex-direction: column;
+    background-color: var(--color-base-gray);
+}
+
+body,button,input{
+    font-family: "Mulish", sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .limites img{
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 9.3rem;
+}
+
+.astronauta{
+    width: 36.4rem;
+    height: 37rem;
+}
+
+header h1{
+    margin-top: 1.7rem;
+    color: var(--color-base-pink);
+    font-size: 3.2rem;
+    font-weight: 900;
+    line-height: normal;
+}
+
+header h2{
+    color: var(--color-base-darkblue);
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 3.5rem;
+}
+
+.arrow{
+    margin-bottom: 9.3rem;
+}
+
+.arrow:hover{
+    cursor: pointer;
+}
+
+.content{
+    background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+    padding: 5.2rem 3.9rem;
+}
+
+figure{
+    border-radius: 2rem;
+    padding: 2.6rem;
+    background-color: #FFF;
+    margin-bottom: 5rem;
+}
+
+figcaption{
+    margin-top: 3.3rem;
+    width:26.5rem;
+}
+
+figcaption h1{
+    margin-bottom: 2rem;
+    color: var(--color-base-pink);
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: normal;
+}
+
+figcaption p{
+    color: var(--color-base-darkblue);
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.fieldset-wrapper{
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.fieldset-wrapper h1{
+    color: var(--color-base-pink);
+    font-family: Mulish;
+    font-size: 3.2rem;
+    font-weight: 900;
+    line-height: normal;
+    margin-top: 7.8rem;
+    margin-bottom: 4.3rem;
+}
+
+input{
+    color: var(--color-base-darkblue);
+    border-radius: 1.6rem;
+    border: 0.15rem solid var(--color-base-darkblue);
+    display: flex;
+    width: 34.8rem;
+    padding: 1.2rem 1.6rem 1.2rem 1.4rem;
+    margin-bottom: 2.4rem;
+    background-color: var(--color-base-gray);
+}
+
+.fieldset-wrapper label {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+}
+
+input::placeholder{
+    color: var(--color-base-darkblue);
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4.5rem;
+    width: 15.1rem;
+    border-style: none;
+    border-radius: 1.6rem;
+    padding: 1.6rem;
+    color: var(--color-base-white);
+    background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+    margin-bottom: 6.5rem;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.6rem;
+    font-size: 2rem;
+    font-size: 1.9rem;
+    font-weight: 600;
+    height: 7.8rem;
+    color: var(--color-base-white);
+    background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+}
+
+@media (min-width: 80rem) {
+    #app {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    header {
+        max-width: 144rem;
+        height: 83rem;
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+        padding: 0 2.9rem 10.3rem 10.9rem;
+        max-height: 83.6rem;
+        flex-direction: row-reverse;
+    }
+
+    header .astro img {
+        width: 72rem;
+        height: 73rem;
+    }
+    
+    header h1{
+        color: var(--color-base-pink);
+        font-family: Mulish;
+        font-size: 5.8rem;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+    }
+
+    header h2{
+        font-size: 3.2rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 18rem;
+    }
+
+    header .limites img{
+        margin-bottom: 13.6rem;
+        margin: 0;
+    }
+
+    .content .planets{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6rem;
+        padding: 6.4rem 11.1rem;
+    }
+
+    .planets{
+        display: flex;
+        max-width: 144rem;
+        margin: 0 auto;
+    }
+
+    .content figure{
+        height: 44.8rem;
+    }
+
+    figcaption{
+        height: 16rem;
+        width: 32.1rem;
+    }
+
+    figcaption p{
+        font-size: 1.9rem;
+        font-style: normal;
+        font-weight: 600;
+    }
+
+    .fieldset-wrapper{
+        width: 56rem;
+    }
+
+    .fieldset-wrapper h1{
+        color: var(--color-base-pink);
+        font-family: Mulish;
+        font-size: 4.2rem;
+        font-weight: 900;
+        line-height: normal;
+    }
+
+    input{
+        width: 100%;
+    }
+    
+    .contato {
+        display: flex;
+        align-items: center;
+        gap: 9.2rem;
+        height: 62.2rem;
+        margin: 0 auto;
+        background: url(./assets/stars.svg);
+        background-repeat: no-repeat;
+        background-position: right;
+      }
+
+    .contato .star-pos {
+        flex: 1;
+      }
+
+    .formulario{
+        max-width: 144rem;
+        display: flex;
+        margin: 0 auto;
+        gap: 66rem;
+    }
+
+    .planets img:hover{
+        filter: contrast(155%) saturate(110%);
+        transform: scale(1.2) rotate(4deg);
+    }
+
+    .limites img:hover{
+        transform: scale(1.1);
+    }
+
+    button:hover{
+        filter: contrast(155%) saturate(110%);
+        transform: scale(1.1);
+    }
+}
+  
